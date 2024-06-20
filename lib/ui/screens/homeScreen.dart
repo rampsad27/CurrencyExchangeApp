@@ -1,6 +1,6 @@
 import 'package:currency/ui/components/anyToany.dart';
 import 'package:currency/ui/components/functions.dart';
-import 'package:currency/ui/components/usdToany.dart';
+
 import 'package:currency/ui/models/ratesModel.dart';
 import 'package:flutter/material.dart';
 
@@ -61,10 +61,6 @@ class _HomeState extends State<Home> {
                           return Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              UsdToAny(
-                                currencies: currSnapshot.data!,
-                                rates: snapshot.data!.rates,
-                              ),
                               AnyToAny(
                                 currencies: currSnapshot.data!,
                                 rates: snapshot.data!.rates,
